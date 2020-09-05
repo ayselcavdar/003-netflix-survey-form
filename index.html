@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/netflix-icon.png" type="pcs/png" />
+    <title>Netflix Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1><span id="s1">Net</span>Flix</h1>
+      <p>Thank you for singing up at Netflix. Tell us more about your self</p>
+      <form id="survey-form">
+        <div class="box">
+          <br />
+          <label for="name">Name</label>
+
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="box">
+          <label for="age">Age</label>
+
+          <input type="number" name="Age" id="age" placeholder="Age" />
+        </div>
+        <div class="box">
+          <label for="e-mail">E-mail</label>
+
+          <input type="e-mail" name="e-mail" placeholder="Enter your email" />
+        </div>
+
+        <div class="box">
+          <label for="content">Content type</label>
+
+          <select name="Series" id="content" style="padding-right: 100px">
+            <option value="">Series</option>
+            <option value="Lucifer">Lucifer</option>
+            <option value="he Office (U.S.)">The Office (U.S.)</option>
+            <option value="The Umbrella Academy.">The Umbrella Academy.</option>
+            <option value="The Seven Deadly Sins">The Seven Deadly Sins</option>
+            <option value="Shameless (U.S.)">Shameless (U.S.)</option>
+            <option value="The Legend of Korra">The Legend of Korra</option>
+          </select>
+        </div>
+        <br />
+
+        <div class="box-1">
+          <span>Movie type</span> <br />
+          <input type="checkbox" name="Movie types" value="Comedy" />
+          Comedy <br />
+          <input type="checkbox" name="Movie types" value="Action" />
+          Action <br />
+          <input type="checkbox" name="Movie types" value="Romance" checked />
+          Romance
+        </div>
+        <br />
+
+        <div class="box-1">
+          <span>Gender</span> <br />
+          <input type="radio" name="gender" value="male" id="genders" /> Male
+          <br />
+
+          <input type="radio" name="gender" value="female" id="genders" />
+          Female <br />
+          <input type="radio" name="gender" value="other" id="genders" /> Other
+        </div>
+        <br />
+        <div class="box">
+          <label>Feed back</label>
+          <textarea
+            name="comments"
+            cols="33"
+            rows="5"
+            placeholder="Any comment"
+          ></textarea>
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+          style="border-radius: 50px; padding: 5px 15px; margin-top: 5px"
+        />
+      </form>
+    </div>
+  </body>
+</html>
